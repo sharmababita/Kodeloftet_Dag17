@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enhet konventerer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="headerLogo">KL</div>
+      <nav>
+        <ul>
+          <li>Nav 1</li>
+          <li>Nav 2</li>
+          <li>Nav 3</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Form for a Unit Converter -->
+      <section class="section">
+        <h2>Enhet konventerer</h2>
+
+        <form class="unitConverter">
+          <label for="input">
+            Skriv inn et tall
+            <input type="number" name="input" id="input" />
+          </label>
+
+          <div>
+            <label for="startEnhet">
+              Velg enhet fra
+              <select name="startEnhet" id="startEnhet">
+                <option value="MM">MM</option>
+                <option value="CM">CM</option>
+                <option value="M">M</option>
+              </select>
+            </label>
+
+            <label for="sluttEnhet">
+              Velg enhet til
+              <select name="sluttEnhet" id="sluttEnhet">
+                <option value="MM">MM</option>
+                <option value="CM">CM</option>
+                <option value="M">M</option>
+              </select>
+            </label>
+          </div>
+
+          <div>
+            <p>Her vises resultatet:</p>
+            <p id="result" class="viewResults"></p>
+          </div>
+
+          <button id="button">Konventer</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Laget av Babita</p>
+    </footer>
+  </body>
+</html>
